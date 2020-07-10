@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#060429"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img"
+
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/titilecare"
+            android:scaleType="fitXY"
+            android:layout_toLeftOf="@id/imgtitle"
+
+
+            />
+
+        <TextView
+            android:id="@+id/imgtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="serif"
+            android:layout_marginLeft="10dp"
+            android:text="Game Caro"
+            android:textColor="#EDF0F1"
+            android:textSize="45sp" />
+    </RelativeLayout>
+    <Button
+        android:layout_margin="20dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img"
+        android:text="P VS Computer"
+        android:background="#EDF0F1"
+        android:textColor="#060429"
+        android:id="@+id/btnpvc"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_margin="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnpvc"
+        android:id="@+id/btnpvp"
+        android:text="p vs p"
+        android:background="#EDF0F1"
+        android:textColor="#060429"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_margin="20dp"
+        android:layout_width="300dp"
+        android:background="#EDF0F1"
+        android:textColor="#060429"
+        android:layout_below="@id/btnpvp"
+        android:layout_centerHorizontal="true"
+        android:text="cai dat"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
